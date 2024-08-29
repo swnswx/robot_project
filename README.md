@@ -7,6 +7,7 @@ This project is designed to run on the following hardware:
 ## Required Python Libraries
 
 To run this project, you need to install the following Python libraries:
+
 ### **Tracking**
 - `cvzone`
 - `ultralytics`
@@ -16,7 +17,7 @@ To run this project, you need to install the following Python libraries:
 
 ## Installation
 
-To install all the required libraries, run the following command:
+To install all the required libraries, use the `requirements.txt` file. Make sure the file is in the root directory of the project, then run the following command:
 
 ```bash
-pip install cvzone ultralytics scikit-image filterpy dill
+pip install -r requirements.txt
