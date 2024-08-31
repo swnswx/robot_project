@@ -21,7 +21,7 @@ To install all the required libraries, use the `requirements.txt` file. Make sur
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## Running the Project
 
 ### On Raspberry Pi 5
