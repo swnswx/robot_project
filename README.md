@@ -21,3 +21,44 @@ To install all the required libraries, use the `requirements.txt` file. Make sur
 
 ```bash
 pip install -r requirements.txt
+
+## Running the Project
+
+### On Raspberry Pi 5
+
+To run the project on the Raspberry Pi 5, execute the following commands:
+
+1. Open a terminal and source the setup file:
+    ```bash
+    source install/local_setup.bash
+    ```
+2. Run the lane detection node:
+    ```bash
+    ros2 run lane_detection_package lane_detection_node
+    ```
+
+### On Jetson Nano
+
+To run the project on the Jetson Nano, use two terminals and execute the following commands:
+
+- **Terminal 1:**
+  1. Source the setup file:
+     ```bash
+     source install/local_setup.bash
+     ```
+  2. Run the object tracking node:
+     ```bash
+     ros2 run tracking_package object_tracking
+     ```
+
+- **Terminal 2:**
+  1. Source the setup file again:
+     ```bash
+     source install/local_setup.bash
+     ```
+  2. Run the micro ROS bridge node:
+     ```bash
+     ros2 run micro_ros_bridge micro_ros_bridge_node
+     ```
+
+Make sure to execute these commands in the correct environment for each hardware platform.
